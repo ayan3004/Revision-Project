@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container" >
+        <h1>Update Data</h1>
+        <form action="/updateData?id=<%=editschema.id%>" method="post"  enctype="multipart/form-data">
+            <input type="text" name="date" placeholder="Enter date" value="<%=editschema.date%>">
+            <input type="text" name="name" placeholder="Enter name" value="<%=editschema.name%>">
+            <input type="text" name="salary" placeholder="Enter salary" value="<%=editschema.salary%>">
+            <input type="file" name="image">
+            <img src="<%=editschema.image%>" width="30%" alt="">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>
